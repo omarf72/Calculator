@@ -40,8 +40,14 @@ public class App {
             }
             else if(operator.equals("division"))
             {
-                double quotient=number1/number2;
+                if(number2==0){
+                    throw new Exception("Error Divide by Zero");
+                }
+                else{
+                    double quotient=number1/number2;
                 System.out.println(quotient);
+                }
+              
             }
 
 
@@ -75,42 +81,22 @@ public class App {
         }
         else if(operator.equals("division"))
         {
-            int quotient=number1/number2;
-            System.out.println(quotient);
+            if(number2==0){
+                throw new Exception("Error Divide by Zero");
+            }
+            else{
+                int quotient=number1/number2;
+                System.out.println(quotient);
+            }
+
+            
         }
 
         }
 
         
-
-        //System.out.println("Do you want to add, subtract," +
-       // " multiplaction and division (type subtract or add or multiply or subtraction");
 
        
-
-        
-
-       /*  if(operator.equals("add"))
-        {
-            int sum=number1+number2;
-            System.out.println(sum);
-
-        }
-        else if(operator.equals("subtract"))
-        {
-            int difference=number1-number2;
-            System.out.println(difference);
-        }
-        else if(operator.equals("multiply")){
-            int product=number1*number2;
-            System.out.println(product);
-        }
-        else if(operator.equals("division"))
-        {
-            int quotient=number1/number2;
-            System.out.println(quotient);
-        }*/
-        
 
      
 
